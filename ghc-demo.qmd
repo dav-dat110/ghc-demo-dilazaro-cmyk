@@ -1,0 +1,84 @@
+---
+title: "GHC Demo Assignment"
+subtitle: "CSC 110 - Fall 2025"
+author: "Diana Lazaro"
+date: "2025-10-23"
+format:
+  html:
+    toc: true
+    toc-location: left
+    theme: default # bootstrap 5 default
+  pdf: default
+  
+---
+```{r setup, include=FALSE}
+library(tidyverse)
+
+```
+# Homework
+
+```{r}
+#| label: fig-fuel-mileage
+#| fig-cap: "Fuel mileage scatterplot"
+
+ggplot(mpg, aes(x = displ, y = hwy)) +
+geom_point(color = "blue") +
+labs(
+title = "Impact of Engine Size on Highway Mileage",
+x = "Engine Displacement (liters)",
+y = "Highway MPG"
+)
+```
+
+[Visit Davidson College](https://www.davidson.edu)
+
+# My Classes This Semester
+- CSC 110
+- MAT 110
+- WRI 111
+- HIS 162
+
+# My Top 3 Favorite Movies
+1. The Notebook
+2. Inception
+3. Mean Girls
+
+Evidence itself is open to interpretation and thus to debate.[^1]
+
+[^1]: p247, Graff, "They Say I Say", 1990.
+
+# Quadratic Formula
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
+# Mermaid Flowchart
+```{mermaid}
+flowchart LR
+  A[Hard edge] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C --> E[Result two]
+```
+
+"Four score and seven years ago our fathers brought forth on this continent, a new nation..."
+
+::: {.callout-note}
+This is a note callout block.
+:::
+::: {.callout-tip}
+This is a tip block with some helpful info.
+:::
+::: {.callout-important collapse=true}
+This important block can be collapsed for later reading.
+:::
+
+# Reflection
+
+One thing I learned that I think will really help with our final project is how to make interactive visuals using code blocks like ```{r} or ```{mermaid}. I didn’t know you could actually build mind map looking charts or write formulas right inside the document. For our project about immigration policies, I could use this to make a mermaid chart that shows how immigrant populations connect to job participation rates in different cities. It just makes the project more interesting to look at and easier for people to understand what’s going on in the data.
+Another trick I liked was using Markdown links to make sources look cleaner. Instead of pasting long URLs, I can just write something like [Census Data](https://www.census.gov/) and it looks so much better. Since our project uses a lot of websites, like data from the Migration Policy Institute or Bureau of Labor Statistics, this will make our final page look way more organized and professional.
+Finally, I like how Markdown lets you use bold text or `inline code` to highlight key ideas. It’s a small thing, but it makes the writing clearer and more fun to format. I’ll probably use this to make important terms like social capital or employment participation stand out in our final project. It also helps break up big chunks of text so everything looks cleaner when we show it to the class.
+
+```
+ pdf-engine-opt: --no-toc-relocation.
+ 
